@@ -79,8 +79,11 @@ class Polynom():
             if(i<l-1):
                 res+="+"
         return res
-def ente(o):
-    return Ente(quaks=o.grad())
+    def __ente__(self):
+        return Ente(quaks=self.grad())
+
+def ente(arg):
+    return arg.__ente__()
 
 
 class Ente :
@@ -92,8 +95,6 @@ class Ente :
 
     def __str__ (self):
         return self.quaks*' Quack !'
-    def __print__(self):
-        print(str(self))
 p1=Polynom([1,2,3,5])
 e=ente(p1)
 print(e)
