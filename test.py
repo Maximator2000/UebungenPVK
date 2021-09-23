@@ -1,0 +1,27 @@
+import myMath
+import someClasses
+
+#print(myMath.sort([4,5,-1,1,8,-2]))
+#print(myMath.sortString(['spiderman','batman','superman']))
+#print(myMath.fak(5))
+#print(myMath.power(2,4))
+#print("2 hoch 4 ist "+str(power(2,4)))
+#print("Logarithmus zur Basis 2 von 8 "+str(myMath.log(2,8)))
+#print("Wurzel aus 9 "+str(myMath.sqrt(9))+" "+str(myMath.power(9,0.5)))
+#print("Lösung der quadr. Gleichung mit a=2,b=3,c=1 :"+str(myMath.mitternachtsformel(2,3,1)))
+#print("cos von 0 "+str(myMath.cos(0)))
+#print("sin von 0 "+str(myMath.sin(0)))
+#print("b=3,c=7,alpha=1. Und die Seite a vom Dreieick ist "+str(myMath.letzteSeite(3,7,1)))
+
+#day=someClasses.Geburtstag(5,2,2003)
+#day.print()
+#day.nice_print()
+#print(day.nice_print2())
+p1=someClasses.Polynom([1,2,3,5])
+p2=someClasses.Polynom([-1,5,3,5,1])
+print("p1-p2="+str(p1.sub(p2.koeffizienten)))
+print("p1*1.4="+str(p1.multi(1.4)))
+print("Polynom p2 :"+str(p2))
+print("Polynom p1 hat den Grad "+str(p1.grad()))
+e=someClasses.ente(p1)
+print(e)
