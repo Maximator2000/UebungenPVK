@@ -1,0 +1,28 @@
+import myMath
+import matplotlib.pyplot as mpp
+import math
+import numpy
+
+
+
+
+#x_values=[(x/20) for x in range(20)]
+#y1_values=[myMath.sqrt(x) for x in x_values]
+#y2_values=[math.sqrt(x) for x in x_values]
+#y3_values=[a-b for a,b in zip(y1_values,y2_values)]
+#mpp.plot(x_values,y1_values,label="f(x)=sqrt(x)")
+#mpp.plot(x_values,y2_values,label="f(x)=sqrt(x)")
+#mpp.plot(x_values,y3_values)
+#mpp.legend(loc='best')
+#mpp.xlabel("Das ist die x-Achse")
+#mpp.show()
+
+redX=[0.25,10.75]
+mpp.plot([0.25,10.25],[0.25,0.25],color='red',label='unten')
+mpp.plot([0.25,10.25],[10.25,10.25],color='blue', linestyle='dotted',label='oben')
+mpp.plot([0.25,0.25,0.25,0.25,0.25,0.25],[0.25+2*i for i in range(6)],color='green',marker='v',label='links')
+mpp.plot([10.25,10.25,10.25],[0.25+5*i for i in range(3)],color='yellow',marker='s', linestyle='dotted',label='rechts')
+mpp.legend(loc='best')
+mpp.show()
+
+
